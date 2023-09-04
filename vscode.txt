@@ -1,0 +1,9 @@
+Open terminal : ctrl + `
+Command Pallete : ctrl + shift + P
+Open Setting : ctrl + ,
+shift + alt + f : formate code
+Ctrl + p : Open file explorer pane
+Ctrl + g : Go to line in current
+Ctrl + shift + k : Delete a line + lines
+Alt + Click : Select multi line/word to amend
+Double Click in explorer pane : Create new folder/file
