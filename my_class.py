@@ -1,31 +1,30 @@
-""" Object Oriented Progrmming """
+"""Object Oriented Programe"""
 
 
 class Employee:
-    """Employee class tutorial"""
+    """Employee Class"""
 
-    # Class attribute
-    father_name = "Syed Asif"
+    num_of_emp = 0
+    raise_amount = 1.04
 
-    def __init__(self, first_name, last_name):
-        # instance attribute
-        self.first_name = first_name
-        self.last_name = last_name
+    def __init__(self, first, last, pay):
+        self.first = first
+        self.last = last
+        self.pay = pay
+        self.email = f"{first}.{last}@compny.com"
+
+        Employee.num_of_emp += 1
 
     def full_name(self):
-        """Call full name"""
-        return f"{self.first_name} {self.last_name}"
+        """Print Full Name"""
+        return f"{self.first} {self.last}"
+
+    def applay_raise(self):
+        """Raise Employee Pay"""
+        self.pay = int(self.pay * self.raise_amount)
 
 
-# 1st instance of a class
-ali = Employee("Ali", "Raza")
-# print(ali.first_name, ali.last_name)
-print(ali.full_name())
-print(ali.father_name)
-# # 2nd instance of a class
-# maaz = Employee("Maaz", "Haider")
-# print(maaz.first_name, maaz.last_name)
+emp_1 = Employee("Jan", "Woo", 5000)
+emp_2 = Employee("Alex", "Core", 6000)
 
-# # 3rd instance of a class
-# aashir = Employee("Aashir", "Raza")
-# print(aashir.first_name, aashir.last_name)
+print(Employee.num_of_emp)
