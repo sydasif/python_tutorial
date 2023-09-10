@@ -1,4 +1,11 @@
-"""Object Oriented Programe"""
+"""Object Oriented Program
+4th tutorial --> child class
+
+help on class
+--> print(help(Developer))
+--> isinstance
+--> issubclass
+"""
 
 
 class Employee:
@@ -11,7 +18,7 @@ class Employee:
         self.first = first
         self.last = last
         self.pay = pay
-        self.email = f"{first}.{last}@compny.com"
+        self.email = f"{first}.{last}@company.com"
 
         Employee.num_of_emp += 1
 
@@ -66,8 +73,6 @@ dev_1 = Developer("Jan", "Woo", 5000, "Python")
 dev_2 = Developer("Alex", "Core", 6000, "Java")
 
 mngr = Manager("Sue", "Dee", 9000, [dev_1])
-
-# print(help(Developer))  # help on class
 
 mngr.add_emp(dev_2)
 mngr.prin_emp()
