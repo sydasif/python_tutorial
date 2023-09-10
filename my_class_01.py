@@ -1,22 +1,26 @@
-"""Object Oriented Programe"""
+"""Object Oriented Program
+1st tutorial --> Creation"""
 
 
 class Employee:
     """Employee Class"""
 
-    def __init__(self, first, last, pay):  # Attributes of Employee class
+    # Instance attributes
+    def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
-        self.email = f"{first}.{last}@compny.com"
+        self.email = f"{first}.{last}@company.com"
 
-    def full_name(self):  # Class method
+    # Instance method
+    def full_name(self):
         """Print Full Name"""
         return f"{self.first} {self.last}"
 
 
-emp_1 = Employee("Jan", "Woo", 5000)  # instance of a class
-emp_2 = Employee("Alex", "Core", 6000)  # instance of a class
+# instance of a class
+emp_1 = Employee("Jan", "Woo", 5000)
+emp_2 = Employee("Alex", "Core", 6000)
 
 print(emp_1.full_name())
 print(emp_1.pay)
