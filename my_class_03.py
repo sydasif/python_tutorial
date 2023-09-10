@@ -11,7 +11,7 @@ class Employee:
         self.first = first
         self.last = last
         self.pay = pay
-        # self.email = f"{first}.{last}@compny.com"
+        # self.email = f"{first}.{last}@company.com"
 
         Employee.num_of_emp += 1
 
