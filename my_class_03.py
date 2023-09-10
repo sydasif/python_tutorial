@@ -23,11 +23,14 @@ class Employee:
         """Raise Employee Pay"""
         self.pay = int(self.pay * self.raise_amount)
 
+    # @classmethod
+    # @staticmethod
+
 
 emp_1 = Employee("Jan", "Woo", 5000)
 emp_2 = Employee("Alex", "Core", 6000)
 
-# emp_1.raise_amount = 1.05
 
 emp_1.applay_raise()
+
 print(emp_1.pay)
