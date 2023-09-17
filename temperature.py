@@ -8,7 +8,7 @@ def convert_cel_to_far(degree):
     return converted_output
 
 
-user_data = input("Enter a tempreture in celsius: ")
+user_data = input("Enter a temperature in celsius: ")
 data = convert_cel_to_far(user_data)
 print(f"{user_data} degrees C = {data:.2f} degrees F")
 
@@ -19,6 +19,6 @@ def convert_far_to_cel(degree):
     return converted_output
 
 
-user_data = input("Enter a tempreture in fahrenheit: ")
+user_data = input("Enter a temperature in fahrenheit: ")
 data = convert_far_to_cel(user_data)
 print(f"{user_data} degrees F = {data:.2f} C")  # round function can be used
